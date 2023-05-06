@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "20231_maua_ecm516_mss",
-    "dateExported": "2023-04-29T12:30:46.362Z",
+    "dateExported": "2023-05-06T12:11:15.802Z",
     "version": "1.1",
     "folders": [
         {
@@ -10,6 +10,13 @@
             "containerId": "",
             "created": "2023-04-29T12:28:04.416Z",
             "sortNum": 10000
+        },
+        {
+            "_id": "d716ec19-4dbf-42ed-a2a3-12fbca4b9382",
+            "name": "observacoes",
+            "containerId": "",
+            "created": "2023-05-06T12:01:11.811Z",
+            "sortNum": 20000
         }
     ],
     "requests": [
@@ -37,6 +44,39 @@
             "sortNum": 20000,
             "created": "2023-04-29T12:28:20.236Z",
             "modified": "2023-04-29T12:29:43.521Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"texto\": \"{{#string}}\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e6217bba-b004-42fb-826e-0540cc15fe61",
+            "colId": "50db2a70-035e-4ceb-977b-a396bdb01750",
+            "containerId": "d716ec19-4dbf-42ed-a2a3-12fbca4b9382",
+            "name": "Obter observacoes",
+            "url": "localhost:5000/lembretes/1/observacoes",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-06T12:01:45.514Z",
+            "modified": "2023-05-06T12:06:08.164Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a42e37ef-5e19-48a0-98e0-f16e8c3fcb45",
+            "colId": "50db2a70-035e-4ceb-977b-a396bdb01750",
+            "containerId": "d716ec19-4dbf-42ed-a2a3-12fbca4b9382",
+            "name": "Salvar Observação",
+            "url": "localhost:5000/lembretes/1/observacoes",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-05-06T12:03:23.522Z",
+            "modified": "2023-05-06T12:05:04.142Z",
             "headers": [],
             "params": [],
             "body": {
