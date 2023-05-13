@@ -26,6 +26,7 @@ app.post('/lembretes/:id/observacoes', (req, res) => {
         observacoesPorLembreteID[req.params.id] || []
         observacoesDoLembrete.push({id: idObs, texto})
         observacoesPorLembreteID[req.params.id] = observacoesDoLembrete
+  
   res.status(201).json(observacoesDoLembrete)
 })
 
