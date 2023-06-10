@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 10000
 app.post('/eventos', (req, res) => {
   //{tipo: "LembreteCriado", dados: {id: 1, texto: "Fazer café"}}
   const evento = req.body
+  console.log(evento)
   axios.post('http://localhost:4000/eventos', evento)
 
   axios.post('http://localhost:5000/eventos', evento)
