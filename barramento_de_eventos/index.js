@@ -11,11 +11,17 @@ app.post('/eventos', (req, res) => {
   //{tipo: "LembreteCriado", dados: {id: 1, texto: "Fazer café"}}
   const evento = req.body
   console.log(evento)
+  //lembretes
   axios.post('http://localhost:4000/eventos', evento)
 
+  //observações
   axios.post('http://localhost:5000/eventos', evento)
 
+  //consulta
   axios.post('http://localhost:6000/eventos', evento)
+
+  //classificação
+  axios.post('http://localhost:7000/eventos', evento)
 
   res.status(200).send({msg: 'ok'})
 })

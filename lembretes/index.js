@@ -35,8 +35,13 @@ app.get('/lembretes', (req, res) => {
 })
 
 app.post('/eventos', (req, res) => {
-  console.log(req.body)
-  res.end()
+  try{
+    console.log(req.body)
+  }
+  catch(e){
+
+  }
+  res.status(200).json({msg: 'ok'})
 })
 const PORT = process.env.PORT || 4000
 app.listen(PORT, () => console.log(`Lembretes. Porta ${PORT}`))
