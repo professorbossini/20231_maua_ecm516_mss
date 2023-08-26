@@ -1,49 +1,56 @@
 {
     "client": "Thunder Client",
     "collectionName": "20231_maua_ecm516_mss",
-    "dateExported": "2023-05-06T12:11:15.802Z",
+    "dateExported": "2023-08-26T12:29:44.093Z",
     "version": "1.1",
     "folders": [
         {
-            "_id": "0f574c3b-4f5c-40f0-9e23-59c6066db8f6",
+            "_id": "6a8fcff8-37fe-4667-b824-2347232d1165",
             "name": "lembretes",
             "containerId": "",
-            "created": "2023-04-29T12:28:04.416Z",
+            "created": "2023-08-26T11:26:16.647Z",
             "sortNum": 10000
         },
         {
-            "_id": "d716ec19-4dbf-42ed-a2a3-12fbca4b9382",
+            "_id": "e2721542-a7f7-48e2-bb9a-f2404b12b908",
             "name": "observacoes",
             "containerId": "",
-            "created": "2023-05-06T12:01:11.811Z",
+            "created": "2023-08-26T11:26:16.648Z",
             "sortNum": 20000
+        },
+        {
+            "_id": "a25870b3-8b0f-4997-be66-773502f0db1c",
+            "name": "consulta",
+            "containerId": "",
+            "created": "2023-08-26T11:27:04.033Z",
+            "sortNum": 30000
         }
     ],
     "requests": [
         {
-            "_id": "297460aa-aec6-4fb5-8926-ba021e43639d",
-            "colId": "50db2a70-035e-4ceb-977b-a396bdb01750",
-            "containerId": "0f574c3b-4f5c-40f0-9e23-59c6066db8f6",
+            "_id": "39da9601-40c4-4228-ae35-278aa4d12c13",
+            "colId": "a7b05aa9-e9bd-46a5-a19a-b175e8c4a37a",
+            "containerId": "6a8fcff8-37fe-4667-b824-2347232d1165",
             "name": "Obter lembretes",
             "url": "localhost:4000/lembretes",
             "method": "GET",
             "sortNum": 10000,
-            "created": "2023-04-29T12:27:52.800Z",
-            "modified": "2023-04-29T12:28:30.208Z",
+            "created": "2023-08-26T11:26:16.647Z",
+            "modified": "2023-08-26T11:30:12.954Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "3ad003e2-f11e-4014-bd45-1c3ff1d1ac80",
-            "colId": "50db2a70-035e-4ceb-977b-a396bdb01750",
-            "containerId": "0f574c3b-4f5c-40f0-9e23-59c6066db8f6",
+            "_id": "7bfc33e2-cf89-4ba5-b150-3a3042c6f4fb",
+            "colId": "a7b05aa9-e9bd-46a5-a19a-b175e8c4a37a",
+            "containerId": "6a8fcff8-37fe-4667-b824-2347232d1165",
             "name": "Salvar lembrete",
             "url": "localhost:4000/lembretes",
             "method": "POST",
             "sortNum": 20000,
-            "created": "2023-04-29T12:28:20.236Z",
-            "modified": "2023-04-29T12:29:43.521Z",
+            "created": "2023-08-26T11:26:16.649Z",
+            "modified": "2023-08-26T11:26:16.649Z",
             "headers": [],
             "params": [],
             "body": {
@@ -54,29 +61,29 @@
             "tests": []
         },
         {
-            "_id": "e6217bba-b004-42fb-826e-0540cc15fe61",
-            "colId": "50db2a70-035e-4ceb-977b-a396bdb01750",
-            "containerId": "d716ec19-4dbf-42ed-a2a3-12fbca4b9382",
+            "_id": "0f152166-60f9-4329-b17a-08ae18af8372",
+            "colId": "a7b05aa9-e9bd-46a5-a19a-b175e8c4a37a",
+            "containerId": "e2721542-a7f7-48e2-bb9a-f2404b12b908",
             "name": "Obter observacoes",
             "url": "localhost:5000/lembretes/1/observacoes",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2023-05-06T12:01:45.514Z",
-            "modified": "2023-05-06T12:06:08.164Z",
+            "created": "2023-08-26T11:26:16.650Z",
+            "modified": "2023-08-26T11:26:16.650Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "a42e37ef-5e19-48a0-98e0-f16e8c3fcb45",
-            "colId": "50db2a70-035e-4ceb-977b-a396bdb01750",
-            "containerId": "d716ec19-4dbf-42ed-a2a3-12fbca4b9382",
+            "_id": "e9ffecfd-ce8f-422d-b18c-1338140fb259",
+            "colId": "a7b05aa9-e9bd-46a5-a19a-b175e8c4a37a",
+            "containerId": "e2721542-a7f7-48e2-bb9a-f2404b12b908",
             "name": "Salvar Observação",
             "url": "localhost:5000/lembretes/1/observacoes",
             "method": "POST",
             "sortNum": 50000,
-            "created": "2023-05-06T12:03:23.522Z",
-            "modified": "2023-05-06T12:05:04.142Z",
+            "created": "2023-08-26T11:26:16.651Z",
+            "modified": "2023-08-26T11:26:16.651Z",
             "headers": [],
             "params": [],
             "body": {
@@ -84,6 +91,20 @@
                 "raw": "{\n  \"texto\": \"{{#string}}\"\n}",
                 "form": []
             },
+            "tests": []
+        },
+        {
+            "_id": "88789f19-3048-4866-9797-445720578423",
+            "colId": "a7b05aa9-e9bd-46a5-a19a-b175e8c4a37a",
+            "containerId": "a25870b3-8b0f-4997-be66-773502f0db1c",
+            "name": "Obter base consolidada",
+            "url": "localhost:6000/lembretes",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-08-26T11:27:17.849Z",
+            "modified": "2023-08-26T11:27:33.189Z",
+            "headers": [],
+            "params": [],
             "tests": []
         }
     ]
