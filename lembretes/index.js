@@ -44,4 +44,7 @@ app.post('/eventos', (req, res) => {
   res.status(200).json({msg: 'ok'})
 })
 const PORT = process.env.PORT || 4000
-app.listen(PORT, () => console.log(`Lembretes. Porta ${PORT}`))
+app.listen(PORT, () => {
+  console.log('Nova versão')
+  console.log(`Lembretes. Porta ${PORT}`)
+})
