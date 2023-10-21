@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: lembretes
-          image: rodbossini/ecm516-20232-lembretes:0.0.1
+          image: rodbossini/ecm516-20232-lembretes
           # resources:
           #   limits:
           #     memory: 256Mi

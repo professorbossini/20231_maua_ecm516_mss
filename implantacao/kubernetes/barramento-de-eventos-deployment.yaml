@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: barramento-de-eventos-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: barramento-de-eventos
+  template:
+    metadata:
+      labels:
+        app: barramento-de-eventos
+    spec:
+      containers: 
+        - name: barramento-de-eventos
+          image: rodbossini/ecm516-20232-barramento-de-eventos
